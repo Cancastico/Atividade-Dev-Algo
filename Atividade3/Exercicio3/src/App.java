@@ -15,7 +15,8 @@ public class App {
         JOptionPane.showMessageDialog(null, numero1 + "<" + numero2 +  " ? " + (operador = numero1Doub < numero2Doub) + "\n" +
                                             numero1 + ">" + numero2 +  " ? " + (operador = numero1Doub > numero2Doub) + "\n" +
                                             numero1 + "<=" + numero2 + " ? " + (operador = numero1Doub <= numero2Doub) + "\n" +
-                                            numero1 + ">=" + numero2 + " ? " + (operador = numero1Doub >= numero2Doub)
-        );
+                                            numero1 + ">=" + numero2 + " ? " + (operador = numero1Doub >= numero2Doub) + "\n" +
+                                            numero1 + "==" + numero2 + " ? " + (operador = numero1Doub == numero2Doub) + "\n" +
+                                            numero1 + "!=" + numero2 + " ? " + (operador = numero1Doub != numero2Doub));
     }
 }
