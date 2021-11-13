@@ -36,30 +36,24 @@ public class App {
             System.out.print("Digite o cupom : "); 
             String cupomCodEntrada = entrada.next().toUpperCase();
 
-            for (int i = 0; i < cupomCod.length; i++) {
-                if(cupomCodEntrada == cupomCod[i]){
-                    switch (cupomCodEntrada) {
-                        case "SETEMBROCHOVE":
-                            desconto = 0.2 * valorPagamento; // 10%
-                            System.out.println("Parabéns, você ganhou 10% de desconto");
-                            break;
-                        case "NAOCHOVENAO":
-                            desconto = 10.00; // 10%
-                            System.out.println("Parabéns, você ganhou 30% de desconto");
-                            break;
-                        case "CHOVEPAKAS":
-                            desconto = 0.5 *valorPagamento;
-                            if(desconto > 40){
-                                desconto = 40;
-                            }
-                        break;
-                        default:
-                            System.out.println("Cupom inválido");
-                            break;
+            switch (cupomCodEntrada) {
+                case "SETEMBROCHOVE":
+                    desconto = 0.2 * valorPagamento; // 10%
+                    System.out.println("Parabéns, você ganhou 20% de desconto");
+                    break;
+                case "NAOCHOVENAO":
+                    desconto = 10.00; // 10%
+                    System.out.println("Parabéns, você ganhou 10 R$ de desconto");
+                    break;
+                case "CHOVEPAKAS":
+                    desconto = 0.5 *valorPagamento;
+                    if(desconto > 40){
+                        desconto = 40;
                     }
-                }else{
-                    System.out.println("Digite um cupom valido!");
-                }
+                break;
+                default:
+                    System.out.println("Cupom inválido");
+                    break;
             }
         } else {
             System.out.print("Compra sem cupom.\n"); 
